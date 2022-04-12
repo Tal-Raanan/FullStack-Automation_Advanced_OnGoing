@@ -1,0 +1,21 @@
+[ {
+  "uid" : "6687d9414aefeab5",
+  "name" : "Test02 - Verify Default users",
+  "time" : {
+    "start" : 1647521380809,
+    "stop" : 1647521396643,
+    "duration" : 15834
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "8b44ff93df3d6885",
+  "name" : "Test01 - Verify Header",
+  "time" : {
+    "start" : 1647521363776,
+    "stop" : 1647521379912,
+    "duration" : 16136
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

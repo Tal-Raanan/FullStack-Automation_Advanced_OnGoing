@@ -1,0 +1,51 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Web Suite",
+    "children" : [ {
+      "name" : "Web Tests",
+      "children" : [ {
+        "name" : "sanity.GrafanaWeb",
+        "children" : [ {
+          "name" : "Test01 - Verify Header",
+          "uid" : "8b44ff93df3d6885",
+          "parentUid" : "c5b0eafa658485fa3314b91a9998509c",
+          "status" : "broken",
+          "time" : {
+            "start" : 1647521363776,
+            "stop" : 1647521379912,
+            "duration" : 16136
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "web" ]
+        }, {
+          "name" : "Test02 - Verify Default users",
+          "uid" : "6687d9414aefeab5",
+          "parentUid" : "c5b0eafa658485fa3314b91a9998509c",
+          "status" : "broken",
+          "time" : {
+            "start" : 1647521380809,
+            "stop" : 1647521396643,
+            "duration" : 15834
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "web" ]
+        } ],
+        "uid" : "c5b0eafa658485fa3314b91a9998509c"
+      } ],
+      "uid" : "fbd747309552d470d458686a49ca6eb7"
+    } ],
+    "uid" : "3ee6c328cd13b7bf8cf2e1560d3cdfae"
+  } ],
+  "name" : "suites"
+}

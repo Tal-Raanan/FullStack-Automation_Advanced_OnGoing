@@ -1,0 +1,44 @@
+{
+  "4fc4395fed819050eafb7427a380b18d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6687d9414aefeab5",
+      "reportUrl" : "http://localhost:9090/job/Web/7/allure/#testresult/6687d9414aefeab5",
+      "status" : "broken",
+      "statusDetails" : "java.lang.reflect.InvocationTargetException\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'TALR', ip: '192.168.224.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: driver.version: RemoteWebDriver",
+      "time" : {
+        "start" : 1647521380809,
+        "stop" : 1647521396643,
+        "duration" : 15834
+      }
+    } ]
+  },
+  "f143a1a38733ab45626a9a4c906fbcec" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8b44ff93df3d6885",
+      "reportUrl" : "http://localhost:9090/job/Web/7/allure/#testresult/8b44ff93df3d6885",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: button[class='css-w9m50q-button']' (tried for 5 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1647521363776,
+        "stop" : 1647521379912,
+        "duration" : 16136
+      }
+    } ]
+  }
+}

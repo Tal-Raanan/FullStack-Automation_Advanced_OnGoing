@@ -1,0 +1,39 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "Test01 - Verify Header",
+    "uid" : "8b44ff93df3d6885",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1647521363776,
+      "stop" : 1647521379912,
+      "duration" : 16136
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "web" ]
+  }, {
+    "name" : "Test02 - Verify Default users",
+    "uid" : "6687d9414aefeab5",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1647521380809,
+      "stop" : 1647521396643,
+      "duration" : 15834
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "web" ]
+  } ],
+  "name" : "behaviors"
+}
