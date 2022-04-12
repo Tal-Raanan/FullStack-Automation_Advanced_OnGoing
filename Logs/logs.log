@@ -1,6 +1,0 @@
-2022-04-12 10:20:23 INFO  Logger:38 - ------------------- Starting Execution -------------------
-2022-04-12 10:21:23 INFO  Logger:38 - ------------------- Test: test01_verifyAdditionCommand Passed -------------------
-2022-04-12 10:21:23 INFO  Logger:38 - File Deleted Successfully
-2022-04-12 10:22:05 INFO  Logger:38 - ------------------- Test: test02_getFWVersion Passed -------------------
-2022-04-12 10:22:06 INFO  Logger:38 - File Deleted Successfully
-2022-04-12 10:22:06 INFO  Logger:38 - ------------------- Ending Execution -------------------
