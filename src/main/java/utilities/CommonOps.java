@@ -1,4 +1,5 @@
 package utilities;
+import extensions.ClientServerActions;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -21,6 +22,7 @@ import workflows.ElectronFlows;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -167,6 +169,21 @@ public class CommonOps extends Base {
         ManagePages.initQuartet();
     }
 
+    // Method Name: initClientServer
+    // Method Description: This method init Client-Server communication
+    // Method Parameters: None
+    // Method Return: None
+    public static void initClientServer(){
+        try {
+            ClientServerActions.openSocket(getData("SocketIP"), getData("SocketPort"));
+            System.out.println("Connection Succeeded: " + "IP: "+ getData("SocketIP")+";" +" "+ "Port: "+ getData("SocketPort")+";");
+            logger.info("Open Succeeded: " + "IP: "+ getData("SocketIP")+";" +" "+ "Port: "+ getData("SocketPort")+";");
+        } catch (IOException e) {
+            System.out.println("Fail to Establish Connection With "+ getData("SocketIP") + " " + getData("SocketPort"));
+            logger.error("Fail to Establish Connection With "+ getData("SocketIP") + " " + getData("SocketPort"));
+        }
+    }
+
     // Method Name: startSession
     // Method Description: This method starts a session (due to the pre-selected platform)
     // Method Parameters: String
@@ -174,7 +191,7 @@ public class CommonOps extends Base {
     @BeforeClass
     @Parameters({"PlatformName"})
     public void startSession(String PlatformName) {
-               platform = PlatformName;
+        platform = PlatformName;
         if (platform.equalsIgnoreCase("web"))
             initBrowser(getData("BrowserName"));
         else if(platform.equalsIgnoreCase("mobile"))
@@ -185,6 +202,8 @@ public class CommonOps extends Base {
             initElectron();
         else if(platform.equalsIgnoreCase("desktop"))
             initDesktop();
+        else if(platform.equalsIgnoreCase("clientServer"))
+            initClientServer();
         else
             throw new RuntimeException("Invalid platform type");
 
@@ -200,6 +219,13 @@ public class CommonOps extends Base {
     @AfterClass
     public void closeSession() {
         ManageDB.closeConnection();
+        ClientServerActions.closeSocket(); ////CLOSE SOCKET METHOD - SHOULD BE INSERTED IN CLIENTSERVERACTIONS
+//            System.out.println("Socket Closed");
+//            logger.info("Socket Closed");
+//        } catch (IOException e) {
+//            System.out.println("Fail to Close Socket");
+//            logger.error("Fail to Close Socket");
+//        }
         if (!platform.equalsIgnoreCase("api")) {
             if (!platform.equalsIgnoreCase("mobile"))
                 driver.quit();

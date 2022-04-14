@@ -63,5 +63,27 @@ public class Base {
 
     //Page Objects - Desktop
     protected static pageObjects.quartet.MainPage quartetMain;
-}
+
+    //Logger
+    protected static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(utilities.Base.class.getName());
+    protected static void fatal (String msg) {
+            logger.fatal(msg);
+        }
+    protected static void error (String msg) {
+        logger.error(msg);
+    }
+    protected static void warn (String msg) {
+        logger.warn(msg);
+    }
+    protected static void info (String msg) {
+            logger.info(msg);
+        }
+    protected static void debug (String msg) {
+            logger.debug(msg);
+        }
+    protected static void trace (String msg) {
+            logger.trace(msg);
+        }
+    }
+
 

@@ -38,4 +38,10 @@
     <DBUsername>WbxUTF7qNP</DBUsername>
     <DBPassword>YqpAQBMH5h</DBPassword>
 
+    <!-- Client-Server -->
+    <SocketIP>localhost</SocketIP>
+    <SocketPort>4723</SocketPort>
+<!--    <IP>127.0.0.1</IP>-->
+<!--    <Port>10085</Port>-->
+
 </Environment>

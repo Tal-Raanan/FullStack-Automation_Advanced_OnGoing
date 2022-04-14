@@ -14,12 +14,12 @@ import java.io.File;
 public class Listeners extends CommonOps implements ITestListener {
 
     public void onStart(ITestContext execution) {
-        Logger.info("------------------- Starting Execution -------------------");
+        logger.info("------------------- Starting Execution -------------------");
         System.out.println("------------------- Starting Execution -------------------");
     }
 
     public void onFinish(ITestContext execution) {
-        Logger.info("------------------- Ending Execution -------------------");
+        logger.info("------------------- Ending Execution -------------------");
         System.out.println("------------------- Ending Execution -------------------");
     }
 
@@ -27,12 +27,12 @@ public class Listeners extends CommonOps implements ITestListener {
     }
 
     public void onTestSkipped(ITestResult test) {
-        Logger.info("------------------- Skipped Test: " + test.getName() + "-------------------");
+        logger.info("------------------- Skipped Test: " + test.getName() + "-------------------");
         System.out.println("------------------- Skipped Test: " + test.getName() + "-------------------");
     }
 
     public void onTestStart(ITestContext test) {
-        Logger.info("------------------- Starting Test: " + test.getName() + "-------------------");
+        logger.info("------------------- Starting Test: " + test.getName() + "-------------------");
         System.out.println("------------------- Starting Test: " + test.getName() + "-------------------");
     }
 
@@ -41,7 +41,7 @@ public class Listeners extends CommonOps implements ITestListener {
     // Method Parameters: ITestResults
     // Method Return: None
     public void onTestSuccess(ITestResult test) {
-        Logger.info("------------------- Test: " + test.getName() + " Passed -------------------");
+        logger.info("------------------- Test: " + test.getName() + " Passed -------------------");
         System.out.println("------------------- Test: " + test.getName() + " Passed -------------------");
         if (!platform.equalsIgnoreCase("api")) {
             // Stop Recording
@@ -53,11 +53,11 @@ public class Listeners extends CommonOps implements ITestListener {
             // Delete Recorded File
             File file = new File("./test-recordings/" + test.getName() + ".avi");
             if (file.delete()){
-                Logger.info("File Deleted Successfully");
+                logger.info("File Deleted Successfully");
                 System.out.println("File Deleted Successfully");
             }
             else
-                Logger.info("Failed To Delete File");
+                logger.info("Failed To Delete File");
                 System.out.println("Failed To Delete File");
         }
     }
