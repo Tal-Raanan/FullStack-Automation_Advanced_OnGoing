@@ -12,6 +12,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.Screen;
 import org.testng.asserts.SoftAssert;
+
+import java.net.Socket;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -26,6 +28,7 @@ public class Base {
     protected static Screen screen;
     protected static String platform;
 //    protected static Logger logger;
+    protected static Socket socket;
 
         //Web
     protected static WebDriver driver;

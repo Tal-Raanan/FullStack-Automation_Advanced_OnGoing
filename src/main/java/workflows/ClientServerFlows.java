@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class ClientServerFlows extends CommonOps {
 
-    @Step("Sending message to server")
+    @Step("Sending Message to Server")
     public static void sendMessage(String ip, String port, String msg){
         try {
             ClientServerActions.clientOutputMessage(ip, port, msg);

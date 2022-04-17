@@ -8,12 +8,12 @@ import java.net.*;
 public class ClientServerActions extends CommonOps {
 
     @Step("Open Socket")
-    public static void openSocket(String ip, String port) throws IOException {
-        Socket s = new Socket(ip, Integer.parseInt(port));
-        System.out.println("Configured IP is: "+ ip);
-        System.out.println("Configured Port number is: "+ port);
-        logger.info("Configured IP is: "+ ip);
-        logger.info("Configured Port number is: "+ port);
+    public static Socket openSocket(String ip, String port) throws IOException {
+        socket = new Socket(ip, Integer.parseInt(port));
+        System.out.println("Configured IP is: " + ip);
+        System.out.println("Configured Port number is: " + port);
+        logger.info("Configured IP is: " + ip);
+        logger.info("Configured Port number is: " + port);
 
 //server response
 //        ServerSocket ss = new ServerSocket(port);
@@ -21,13 +21,13 @@ public class ClientServerActions extends CommonOps {
 //
 //        System.out.println("Connection Established");
 //        logger.info("Connection Established Successfully");
+        return socket;
     }
 
     @Step("Sending Data Form Client To Server")
     public static void clientOutputMessage (String ip, String port, String msg) throws IOException {
-        Socket s = new Socket(ip, Integer.parseInt(port));
 
-        PrintWriter pr = new PrintWriter(s.getOutputStream());
+        PrintWriter pr = new PrintWriter(socket.getOutputStream());
         pr.println(msg);
         pr.flush();
         logger.info("Sending message to Server: "+msg);
@@ -41,9 +41,8 @@ public class ClientServerActions extends CommonOps {
 
     @Step("Receiving Data Form Client To Server")
     public static void clientInputMessage (String ip, String port, String msg) throws IOException {
-        Socket s = new Socket(ip, Integer.parseInt(port));
 
-        InputStreamReader in = new InputStreamReader(s.getInputStream());
+        InputStreamReader in = new InputStreamReader(socket.getInputStream());
         BufferedReader bf = new BufferedReader(in);
 
         String str = bf.readLine();
@@ -59,7 +58,9 @@ public class ClientServerActions extends CommonOps {
     @Step("Close Socket")
     public static void closeSocket(){
         try {
-        //CLOSE SOCKET METHOD - SHOULD BE INSERTED
+        socket.close();
+            System.out.println("Socket is Now Closed");
+            logger.info("Socket is Now Closed");
         }
         catch (Exception e) {
             System.out.println("An Error Occurred While Closing The DB, See Details" + e);

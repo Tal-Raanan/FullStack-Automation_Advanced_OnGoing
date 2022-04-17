@@ -45,11 +45,9 @@ public class CommonOps extends Base {
             dBuilder = dbFactory.newDocumentBuilder();
             doc = dBuilder.parse(fXmlFile);
             doc.getDocumentElement().normalize();
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             System.out.println("Error Reading XML File: " + e);
-        }
-        finally {
+        } finally {
             return doc.getElementsByTagName(nodeName).item(0).getTextContent();
         }
     }
@@ -111,7 +109,7 @@ public class CommonOps extends Base {
     // Method Description: This method init Mobile
     // Method Parameters: None
     // Method Return: None
-    public static void initMobile(){
+    public static void initMobile() {
         dc.setCapability(MobileCapabilityType.UDID, getData("UDID"));
         dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, getData("AppPackage"));
         dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, getData("AppActivity"));
@@ -130,7 +128,7 @@ public class CommonOps extends Base {
     // Method Description: This method init API
     // Method Parameters: None
     // Method Return: None
-    public static void initAPI(){
+    public static void initAPI() {
         RestAssured.baseURI = getData("urlAPI");
         httpRequest = RestAssured.given().auth().preemptive().basic(getData("Username"), getData("Password"));
     }
@@ -139,7 +137,7 @@ public class CommonOps extends Base {
     // Method Description: This method init Electron
     // Method Parameters: None
     // Method Return: None
-    public static void initElectron(){
+    public static void initElectron() {
         System.setProperty("webdriver.chrome.driver", getData("ElectronDriverPath"));
         ChromeOptions opt = new ChromeOptions();
         opt.setBinary(getData("ElectronAppPath"));
@@ -156,7 +154,7 @@ public class CommonOps extends Base {
     // Method Description: This method init Desktop
     // Method Parameters: None
     // Method Return: None
-    public static void initDesktop(){
+    public static void initDesktop() {
         dc.setCapability("app", getData("ApplicationPath"));
         try {
             driver = new WindowsDriver(new URL(getData("AppiumServerDesktop")), dc);
@@ -173,14 +171,14 @@ public class CommonOps extends Base {
     // Method Description: This method init Client-Server communication
     // Method Parameters: None
     // Method Return: None
-    public static void initClientServer(){
+    public static void initClientServer() {
         try {
-            ClientServerActions.openSocket(getData("SocketIP"), getData("SocketPort"));
-            System.out.println("Connection Succeeded: " + "IP: "+ getData("SocketIP")+";" +" "+ "Port: "+ getData("SocketPort")+";");
-            logger.info("Open Succeeded: " + "IP: "+ getData("SocketIP")+";" +" "+ "Port: "+ getData("SocketPort")+";");
+            socket = ClientServerActions.openSocket(getData("SocketIP"), getData("SocketPort"));
+            System.out.println("Connection Succeeded: " + "IP: " + getData("SocketIP") + ";" + " " + "Port: " + getData("SocketPort") + ";");
+            logger.info("Connection Succeeded: " + "IP: " + getData("SocketIP") + ";" + " " + "Port: " + getData("SocketPort") + ";");
         } catch (IOException e) {
-            System.out.println("Fail to Establish Connection With "+ getData("SocketIP") + " " + getData("SocketPort"));
-            logger.error("Fail to Establish Connection With "+ getData("SocketIP") + " " + getData("SocketPort"));
+            System.out.println("Failed to Establish Connection With " + getData("SocketIP") + " " + getData("SocketPort"));
+            logger.error("Failed to Establish Connection With " + getData("SocketIP") + " " + getData("SocketPort"));
         }
     }
 
@@ -194,15 +192,15 @@ public class CommonOps extends Base {
         platform = PlatformName;
         if (platform.equalsIgnoreCase("web"))
             initBrowser(getData("BrowserName"));
-        else if(platform.equalsIgnoreCase("mobile"))
-                initMobile();
-        else if(platform.equalsIgnoreCase("api"))
+        else if (platform.equalsIgnoreCase("mobile"))
+            initMobile();
+        else if (platform.equalsIgnoreCase("api"))
             initAPI();
-        else if(platform.equalsIgnoreCase("electron"))
+        else if (platform.equalsIgnoreCase("electron"))
             initElectron();
-        else if(platform.equalsIgnoreCase("desktop"))
+        else if (platform.equalsIgnoreCase("desktop"))
             initDesktop();
-        else if(platform.equalsIgnoreCase("clientServer"))
+        else if (platform.equalsIgnoreCase("clientServer"))
             initClientServer();
         else
             throw new RuntimeException("Invalid platform type");
@@ -210,6 +208,7 @@ public class CommonOps extends Base {
         softAssert = new SoftAssert();
         screen = new Screen();
         ManageDB.openConnection(getData("DBURL"), getData("DBUsername"), getData("DBPassword"));
+
     }
 
     // Method Name: closeSession
@@ -219,7 +218,7 @@ public class CommonOps extends Base {
     @AfterClass
     public void closeSession() {
         ManageDB.closeConnection();
-        ClientServerActions.closeSocket(); ////CLOSE SOCKET METHOD - SHOULD BE INSERTED IN CLIENTSERVERACTIONS
+        ClientServerActions.closeSocket();
 //            System.out.println("Socket Closed");
 //            logger.info("Socket Closed");
 //        } catch (IOException e) {
@@ -227,10 +226,14 @@ public class CommonOps extends Base {
 //            logger.error("Fail to Close Socket");
 //        }
         if (!platform.equalsIgnoreCase("api")) {
-            if (!platform.equalsIgnoreCase("mobile"))
-                driver.quit();
-            else
+            if (platform.equalsIgnoreCase("mobile")){
                 mobileDriver.quit();
+            }
+            else if (platform.equalsIgnoreCase("ClientServer")){
+                ClientServerActions.closeSocket();
+            }
+            else {
+                driver.quit();}
         }
     }
 
@@ -239,10 +242,10 @@ public class CommonOps extends Base {
     // Method Parameters: None
     // Method Return: None
     @AfterMethod
-    public void afterMethod(){
+    public void afterMethod() {
         if (platform.equalsIgnoreCase("web"))
             driver.get(getData("url"));
-        else if (platform.equalsIgnoreCase("electron")){
+        else if (platform.equalsIgnoreCase("electron")) {
             ElectronFlows.emptyList();
         }
     }
@@ -253,14 +256,15 @@ public class CommonOps extends Base {
     // Method Return: None
     @BeforeMethod
     public void beforeMethod(Method method) {
-        if (!platform.equalsIgnoreCase("api")) {
-            try {
-                MonteScreenRecorder.startRecord(method.getName());
-            } catch (Exception e) {
-                e.printStackTrace();
+        if (!platform.equalsIgnoreCase("api") && !platform.equalsIgnoreCase("ClientServer")) {
+                try {
+                    MonteScreenRecorder.startRecord(method.getName());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
-}
+
 
 

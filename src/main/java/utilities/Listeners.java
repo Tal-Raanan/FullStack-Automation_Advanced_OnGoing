@@ -43,7 +43,7 @@ public class Listeners extends CommonOps implements ITestListener {
     public void onTestSuccess(ITestResult test) {
         logger.info("------------------- Test: " + test.getName() + " Passed -------------------");
         System.out.println("------------------- Test: " + test.getName() + " Passed -------------------");
-        if (!platform.equalsIgnoreCase("api")) {
+        if (!platform.equalsIgnoreCase("api") && !platform.equalsIgnoreCase("ClientServer")) {
             // Stop Recording
             try {
                 MonteScreenRecorder.stopRecord();
@@ -68,7 +68,7 @@ public class Listeners extends CommonOps implements ITestListener {
     // Method Return: None
     public void onTestFailure (ITestResult test){
         System.out.println("------------------- Test: " + test.getName() + " Failed -------------------");
-        if (!platform.equalsIgnoreCase("api")) {
+        if (!platform.equalsIgnoreCase("api") && !platform.equalsIgnoreCase("ClientServer")) {
             // Stop Recording
             try {
                 MonteScreenRecorder.stopRecord();
