@@ -16,7 +16,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.Screen;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
-import org.testng.reporters.jq.Main;
 import org.w3c.dom.Document;
 import workflows.ElectronFlows;
 import javax.xml.parsers.DocumentBuilder;
@@ -180,6 +179,11 @@ public class CommonOps extends Base {
             System.out.println("Failed to Establish Connection With " + getData("SocketIP") + " " + getData("SocketPort"));
             logger.error("Failed to Establish Connection With " + getData("SocketIP") + " " + getData("SocketPort"));
         }
+    }
+
+    public static void initSerial(){
+
+
     }
 
     // Method Name: startSession

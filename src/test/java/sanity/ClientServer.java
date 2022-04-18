@@ -1,8 +1,5 @@
 package sanity;
 
-import extensions.ClientServerActions;
-import extensions.UIActions;
-import extensions.Verifications;
 import io.qameta.allure.Description;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;

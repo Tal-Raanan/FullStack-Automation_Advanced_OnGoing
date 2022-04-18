@@ -1,5 +1,6 @@
 package utilities;
 
+import com.fazecast.jSerialComm.SerialPort;
 import io.appium.java_client.AppiumDriver;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -29,6 +30,7 @@ public class Base {
     protected static String platform;
 //    protected static Logger logger;
     protected static Socket socket;
+    protected static SerialPort serialPort;
 
         //Web
     protected static WebDriver driver;
@@ -88,5 +90,4 @@ public class Base {
             logger.trace(msg);
         }
     }
-
 

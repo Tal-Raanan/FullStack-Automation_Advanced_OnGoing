@@ -1,6 +1,5 @@
 package workflows;
 
-import extensions.ApiActions;
 import extensions.ClientServerActions;
 import io.qameta.allure.Step;
 import utilities.CommonOps;

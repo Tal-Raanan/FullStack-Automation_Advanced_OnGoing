@@ -44,4 +44,13 @@
 <!--    <IP>127.0.0.1</IP>-->
 <!--    <Port>10085</Port>-->
 
+    <!-- Serial Communication -->
+    <COMPort>COM3</COMPort>
+    <BaudRate>9600</BaudRate>
+    <DataBits>8</DataBits>
+    <StopBits>1</StopBits>
+    <Parity>0</Parity>
+    <ReadTimeout>0</ReadTimeout>
+    <WriteTimeout>0</WriteTimeout>
+
 </Environment>
