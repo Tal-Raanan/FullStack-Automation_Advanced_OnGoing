@@ -1,5 +1,6 @@
 package utilities;
 import extensions.ClientServerActions;
+import extensions.SerialConnectionActions;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -182,8 +183,13 @@ public class CommonOps extends Base {
     }
 
     public static void initSerial(){
-
-
+        try {
+            SerialConnectionActions.setSerialConnection(getData("COMPort"), getData("BaudRate"), getData("DataBits"), getData("StopBits"), getData("Parity"), getData("ReadTimeout"), getData("WriteTimeout"));
+            SerialConnectionActions.openSerialPort(getData("COMPort"));
+        } catch (IOException e) {
+            System.out.println("Failed to Open Serial Port");
+            logger.error("Failed to Open Serial Port");
+        }
     }
 
     // Method Name: startSession
@@ -206,6 +212,8 @@ public class CommonOps extends Base {
             initDesktop();
         else if (platform.equalsIgnoreCase("clientServer"))
             initClientServer();
+        else if (platform.equalsIgnoreCase("serial"))
+            initSerial();
         else
             throw new RuntimeException("Invalid platform type");
 
@@ -233,8 +241,11 @@ public class CommonOps extends Base {
             if (platform.equalsIgnoreCase("mobile")){
                 mobileDriver.quit();
             }
-            else if (platform.equalsIgnoreCase("ClientServer")){
+            else if (platform.equalsIgnoreCase("clientServer")){
                 ClientServerActions.closeSocket();
+            }
+            else if (platform.equalsIgnoreCase("serial")) {            //Relevant TestNG suit should be added
+                SerialConnectionActions.closeSerialPort(getData("COMPort"));
             }
             else {
                 driver.quit();}

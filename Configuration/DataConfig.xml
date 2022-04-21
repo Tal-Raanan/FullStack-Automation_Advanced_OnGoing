@@ -45,7 +45,7 @@
 <!--    <Port>10085</Port>-->
 
     <!-- Serial Communication -->
-    <COMPort>COM3</COMPort>
+    <COMPort>COM4</COMPort>
     <BaudRate>9600</BaudRate>
     <DataBits>8</DataBits>
     <StopBits>1</StopBits>

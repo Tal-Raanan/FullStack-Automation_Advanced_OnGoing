@@ -8,3 +8,13 @@
 2022-04-17 10:54:58 INFO  Base:63 - Socket is Now Closed
 2022-04-17 10:54:58 INFO  Base:63 - Socket is Now Closed
 2022-04-17 10:54:58 INFO  Base:22 - ------------------- Ending Execution -------------------
+2022-04-20 09:44:08 INFO  Base:17 - ------------------- Starting Execution -------------------
+2022-04-20 09:44:08 INFO  Base:16 - Configured IP is: localhost
+2022-04-20 09:44:08 INFO  Base:17 - Configured Port number is: 4723
+2022-04-20 09:44:08 INFO  Base:178 - Connection Succeeded: IP: localhost; Port: 4723;
+2022-04-20 09:44:30 INFO  Base:34 - Sending message to Server: One Two, One Two Is, Just. A. test!
+2022-04-20 09:44:30 INFO  Base:16 - Message sent: One Two, One Two Is, Just. A. test!
+2022-04-20 09:44:30 INFO  Base:44 - ------------------- Test: test01_verifyOutputMessages Passed -------------------
+2022-04-20 09:44:30 INFO  Base:64 - Socket is Now Closed
+2022-04-20 09:44:30 INFO  Base:64 - Socket is Now Closed
+2022-04-20 09:44:30 INFO  Base:22 - ------------------- Ending Execution -------------------

@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Desktop Suite" parallel="false">
     <test name="Desktop Tests">
-        <parameter name="PlatformName" value="ClientServer" />
+        <parameter name="PlatformName" value="clientServer" />
         <classes>
             <class name="sanity.ClientServer" />
         </classes>
