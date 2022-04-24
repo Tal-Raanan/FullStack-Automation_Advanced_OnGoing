@@ -10,14 +10,14 @@ import java.io.OutputStream;
 
 public class SerialConnectionActions extends CommonOps {
 
-//    https://github.com/Fazecast/jSerialComm/wiki/Modes-of-Operation#read-full-blocking-mode
-
         @Step("Set Serial Connection")
         public static void setSerialConnection(String COMPort, String BaudRate, String DataBits, String StopBits, String Parity, String ReadTimeout, String WriteTimeout) throws IOException {
             serialPort = SerialPort.getCommPort(COMPort);
             serialPort.setComPortParameters(Integer.parseInt(BaudRate), Integer.parseInt(DataBits), Integer.parseInt (StopBits), Integer.parseInt (Parity));
             serialPort.setComPortTimeouts(SerialPort.TIMEOUT_WRITE_BLOCKING, Integer.parseInt(ReadTimeout), Integer.parseInt(WriteTimeout));
             //The TIMEOUT_WRITE_BLOCKING mode specifies that a corresponding write call will block until all data bytes have been successfully written to the output serial device.
+            System.out.println("Serial Connection Was Set To: " + "COMPort= "+COMPort+"; " + "BaudRate = "+BaudRate+"; ");
+            logger.info("Serial Connection Was Set To: " + "COMPort= "+COMPort+"; " + "BaudRate = "+BaudRate+"; ");
         }
 
         @Step("Open Serial Port")
@@ -31,7 +31,7 @@ public class SerialConnectionActions extends CommonOps {
 
             } else {
                 System.out.println("Failed to Open Communication Port "+COMPort);
-                logger.info(("Failed to Open Communication Port "+COMPort));
+                logger.info("Failed to Open Communication Port "+COMPort);
             }
         }
 
@@ -48,14 +48,12 @@ public class SerialConnectionActions extends CommonOps {
 
         @Step("Close Serial Port")
         public static void closeSerialPort (String COMPort){
-            try {
-                serialPort.closePort(); //Should return "True"
+            if (serialPort.closePort()) { // //Should return "True")
                 System.out.println("Port " +COMPort + " " + "is Now Close");
                 logger.info("Port " +COMPort + " " + "is Now Close");
-            }
-            catch (Exception e){
+            } else {
                 System.out.println("Failed to Close Communication Port "+COMPort);
-                logger.info(("Failed to Close Communication Port "+COMPort));
+                logger.info("Failed to Close Communication Port "+COMPort);
             }
         }
 }

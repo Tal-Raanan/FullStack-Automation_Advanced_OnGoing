@@ -18,3 +18,20 @@
 2022-04-20 09:44:30 INFO  Base:64 - Socket is Now Closed
 2022-04-20 09:44:30 INFO  Base:64 - Socket is Now Closed
 2022-04-20 09:44:30 INFO  Base:22 - ------------------- Ending Execution -------------------
+2022-04-24 11:56:42 INFO  Base:17 - ------------------- Starting Execution -------------------
+2022-04-24 11:56:42 INFO  Base:20 - Serial Connection Was Set To: COMPort= COM4; BaudRate = 9600; 
+2022-04-24 11:56:42 INFO  Base:34 - Failed to Open Communication Port COM4
+2022-04-24 11:57:04 ERROR Base:18 - Failed to send message: 5
+2022-04-24 11:57:04 INFO  Base:44 - ------------------- Test: test01_verifyOutputMessages Passed -------------------
+2022-04-24 11:57:04 INFO  Base:56 - File Deleted Successfully
+2022-04-24 11:57:04 ERROR Base:68 - An Error Occurred While Closing The DB, See Detailsjava.lang.NullPointerException
+2022-04-24 11:57:04 INFO  Base:53 - Port COM4 is Now Close
+2022-04-24 11:57:04 INFO  Base:22 - ------------------- Ending Execution -------------------
+2022-04-24 12:01:17 INFO  Base:17 - ------------------- Starting Execution -------------------
+2022-04-24 12:01:17 INFO  Base:20 - Serial Connection Was Set To: COMPort= COM4; BaudRate = 9600; 
+2022-04-24 12:01:18 INFO  Base:34 - Failed to Open Communication Port COM4
+2022-04-24 12:01:39 ERROR Base:18 - Failed to send message: 5
+2022-04-24 12:01:39 INFO  Base:44 - ------------------- Test: test01_verifyOutputMessages Passed -------------------
+2022-04-24 12:01:39 ERROR Base:68 - An Error Occurred While Closing The DB, See Detailsjava.lang.NullPointerException
+2022-04-24 12:01:39 INFO  Base:53 - Port COM4 is Now Close
+2022-04-24 12:01:39 INFO  Base:22 - ------------------- Ending Execution -------------------

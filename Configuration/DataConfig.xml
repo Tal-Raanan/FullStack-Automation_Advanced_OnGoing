@@ -52,5 +52,6 @@
     <Parity>0</Parity>
     <ReadTimeout>0</ReadTimeout>
     <WriteTimeout>0</WriteTimeout>
+    <NumberOfBytes>5</NumberOfBytes>
 
 </Environment>

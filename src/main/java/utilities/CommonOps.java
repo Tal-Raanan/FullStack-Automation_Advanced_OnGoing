@@ -271,7 +271,7 @@ public class CommonOps extends Base {
     // Method Return: None
     @BeforeMethod
     public void beforeMethod(Method method) {
-        if (!platform.equalsIgnoreCase("api") && !platform.equalsIgnoreCase("ClientServer")) {
+        if (!platform.equalsIgnoreCase("api") && !platform.equalsIgnoreCase("clientServer") && !platform.equalsIgnoreCase("serial")) {
                 try {
                     MonteScreenRecorder.startRecord(method.getName());
                 } catch (Exception e) {
