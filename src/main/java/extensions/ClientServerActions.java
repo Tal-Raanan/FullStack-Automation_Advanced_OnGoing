@@ -25,7 +25,7 @@ public class ClientServerActions extends CommonOps {
         return socket;
     }
 
-    @Step("Sending Data Form Client To Server")
+    @Step("Sending Data From Client To Server")
     public static void clientOutputMessage (String ip, String port, String msg) throws IOException {
 
         PrintWriter pr = new PrintWriter(socket.getOutputStream());
@@ -40,7 +40,7 @@ public class ClientServerActions extends CommonOps {
 //        System.out.println("Client: "+ str);
     }
 
-    @Step("Receiving Data Form Client To Server")
+    @Step("Receiving Data From Server To Client")
     public static void clientInputMessage (String ip, String port, String msg) throws IOException {
 
         InputStreamReader in = new InputStreamReader(socket.getInputStream());
