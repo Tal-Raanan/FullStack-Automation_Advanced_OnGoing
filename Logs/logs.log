@@ -35,3 +35,45 @@
 2022-04-24 12:01:39 ERROR Base:68 - An Error Occurred While Closing The DB, See Detailsjava.lang.NullPointerException
 2022-04-24 12:01:39 INFO  Base:53 - Port COM4 is Now Close
 2022-04-24 12:01:39 INFO  Base:22 - ------------------- Ending Execution -------------------
+2022-05-09 12:56:47 INFO  Base:17 - ------------------- Starting Execution -------------------
+2022-05-09 12:56:48 INFO  Base:21 - Serial Connection Was Set To: COMPort= COM4; BaudRate = 9600; 
+2022-05-09 12:56:48 INFO  Base:35 - Failed to Open Communication Port COM4
+2022-05-09 12:57:10 INFO  Base:44 - ------------------- Test: test02_verifyInputMessages Passed -------------------
+2022-05-09 12:57:10 ERROR Base:68 - An Error Occurred While Closing The DB, See Detailsjava.lang.NullPointerException
+2022-05-09 12:57:10 INFO  Base:69 - Port COM4 is Now Close
+2022-05-09 12:57:10 INFO  Base:22 - ------------------- Ending Execution -------------------
+2022-05-09 12:58:18 INFO  Base:17 - ------------------- Starting Execution -------------------
+2022-05-09 12:58:18 INFO  Base:21 - Serial Connection Was Set To: COMPort= COM4; BaudRate = 9600; 
+2022-05-09 12:58:18 INFO  Base:31 - Port COM4 is Now Open
+2022-05-09 12:58:41 INFO  Base:44 - ------------------- Test: test02_verifyInputMessages Passed -------------------
+2022-05-09 12:58:41 ERROR Base:68 - An Error Occurred While Closing The DB, See Detailsjava.lang.NullPointerException
+2022-05-09 12:58:41 INFO  Base:69 - Port COM4 is Now Close
+2022-05-09 12:58:41 INFO  Base:22 - ------------------- Ending Execution -------------------
+2022-05-09 12:59:02 INFO  Base:17 - ------------------- Starting Execution -------------------
+2022-05-09 12:59:03 INFO  Base:21 - Serial Connection Was Set To: COMPort= COM4; BaudRate = 9600; 
+2022-05-09 12:59:03 INFO  Base:31 - Port COM4 is Now Open
+2022-05-09 12:59:25 INFO  Base:44 - ------------------- Test: test02_verifyInputMessages Passed -------------------
+2022-05-09 12:59:25 ERROR Base:68 - An Error Occurred While Closing The DB, See Detailsjava.lang.NullPointerException
+2022-05-09 12:59:25 INFO  Base:69 - Port COM4 is Now Close
+2022-05-09 12:59:25 INFO  Base:22 - ------------------- Ending Execution -------------------
+2022-05-09 12:59:33 INFO  Base:17 - ------------------- Starting Execution -------------------
+2022-05-09 12:59:33 INFO  Base:21 - Serial Connection Was Set To: COMPort= COM4; BaudRate = 9600; 
+2022-05-09 12:59:33 INFO  Base:31 - Port COM4 is Now Open
+2022-05-09 12:59:55 INFO  Base:44 - ------------------- Test: test02_verifyInputMessages Passed -------------------
+2022-05-09 12:59:55 ERROR Base:68 - An Error Occurred While Closing The DB, See Detailsjava.lang.NullPointerException
+2022-05-09 12:59:55 INFO  Base:69 - Port COM4 is Now Close
+2022-05-09 12:59:55 INFO  Base:22 - ------------------- Ending Execution -------------------
+2022-05-09 13:00:10 INFO  Base:17 - ------------------- Starting Execution -------------------
+2022-05-09 13:00:10 INFO  Base:21 - Serial Connection Was Set To: COMPort= COM4; BaudRate = 9600; 
+2022-05-09 13:00:10 INFO  Base:31 - Port COM4 is Now Open
+2022-05-09 13:00:32 INFO  Base:44 - ------------------- Test: test02_verifyInputMessages Passed -------------------
+2022-05-09 13:00:32 ERROR Base:68 - An Error Occurred While Closing The DB, See Detailsjava.lang.NullPointerException
+2022-05-09 13:00:32 INFO  Base:69 - Port COM4 is Now Close
+2022-05-09 13:00:32 INFO  Base:22 - ------------------- Ending Execution -------------------
+2022-05-09 13:07:01 INFO  Base:17 - ------------------- Starting Execution -------------------
+2022-05-09 13:07:01 INFO  Base:21 - Serial Connection Was Set To: COMPort= COM4; BaudRate = 9600; 
+2022-05-09 13:07:02 INFO  Base:31 - Port COM4 is Now Open
+2022-05-09 13:07:24 INFO  Base:44 - ------------------- Test: test02_verifyInputMessages Passed -------------------
+2022-05-09 13:07:24 ERROR Base:68 - An Error Occurred While Closing The DB, See Detailsjava.lang.NullPointerException
+2022-05-09 13:07:24 INFO  Base:69 - Port COM4 is Now Close
+2022-05-09 13:07:24 INFO  Base:22 - ------------------- Ending Execution -------------------

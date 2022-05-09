@@ -1,12 +1,13 @@
 package extensions;
 
-import com.fazecast.jSerialComm.*;
+import com.fazecast.jSerialComm.SerialPort;
 import io.qameta.allure.Step;
 import utilities.CommonOps;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.Timer;
 
 public class SerialConnectionActions extends CommonOps {
 
@@ -35,16 +36,31 @@ public class SerialConnectionActions extends CommonOps {
             }
         }
 
-        @Step("Sending Data Bytes")
-        public static void sendingDataBytes(int x) throws Exception{
+        @Step("Send Data Bytes")
+        public static void sendDataBytes(int x) throws Exception{
             for (Integer i = 0; i < x; ++i) {
                 serialPort.getOutputStream().write(i.byteValue());
                 serialPort.getOutputStream().flush();
                 System.out.println("Sent Message: " + x);
                 Thread.sleep(1000);
             }
+        }
 
-    }
+        @Step("Receive Data")
+        public static void receiveData(String ReadTimeout, String WriteTimeout) {
+            long timeStart = System.currentTimeMillis();
+
+            serialPort.setComPortParameters(9600, Byte.SIZE, SerialPort.ONE_STOP_BIT, SerialPort.NO_PARITY);
+            serialPort.setComPortTimeouts(SerialPort.TIMEOUT_WRITE_BLOCKING, Integer.parseInt(ReadTimeout), Integer.parseInt(WriteTimeout)); // 0, 0
+
+            Timer timer = new Timer();
+            TimerScheduleHandler timeSchedule = new TimerScheduleHandler(timeStart);
+
+            serialPort.addDataListener(timeSchedule);
+
+            System.out.println("Listen " + timeSchedule.getListeningEvents());
+            timer.schedule(timeSchedule, 0, 1000);
+        }
 
         @Step("Close Serial Port")
         public static void closeSerialPort (String COMPort){

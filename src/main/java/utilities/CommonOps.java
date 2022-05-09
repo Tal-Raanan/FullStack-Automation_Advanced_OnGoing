@@ -186,6 +186,7 @@ public class CommonOps extends Base {
         try {
             SerialConnectionActions.setSerialConnection(getData("COMPort"), getData("BaudRate"), getData("DataBits"), getData("StopBits"), getData("Parity"), getData("ReadTimeout"), getData("WriteTimeout"));
             SerialConnectionActions.openSerialPort(getData("COMPort"));
+            SerialConnectionActions.receiveData(getData("ReadTimeout"), getData("WriteTimeout"));
         } catch (IOException e) {
             System.out.println("Failed to Open Serial Port");
             logger.error("Failed to Open Serial Port");
@@ -230,13 +231,6 @@ public class CommonOps extends Base {
     @AfterClass
     public void closeSession() {
         ManageDB.closeConnection();
-        ClientServerActions.closeSocket();
-//            System.out.println("Socket Closed");
-//            logger.info("Socket Closed");
-//        } catch (IOException e) {
-//            System.out.println("Fail to Close Socket");
-//            logger.error("Fail to Close Socket");
-//        }
         if (!platform.equalsIgnoreCase("api")) {
             if (platform.equalsIgnoreCase("mobile")){
                 mobileDriver.quit();
