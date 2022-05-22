@@ -30,7 +30,7 @@
 
     <!-- Desktop -->
 <!--    <CalculatorApp>Microsoft.WindowsCalculator_8wekyb3d8bbwe!App</CalculatorApp>-->
-    <ApplicationPath>C:/Program Files/WindowsApps/QuaRTEt_4.0.0.0_x86__jabasdn046bka/QuaRTEt/QuaRTEt.exe</ApplicationPath>
+    <ApplicationPath>C:\Program Files\WindowsApps\QuaRTEt_5.0.0.0_x86__jabasdn046bka/QuaRTEt/QuaRTEt.exe</ApplicationPath>
     <AppiumServerDesktop>http://127.0.0.1:4723</AppiumServerDesktop>
 
     <!-- Database -->
@@ -52,6 +52,6 @@
     <Parity>0</Parity>
     <ReadTimeout>0</ReadTimeout>
     <WriteTimeout>0</WriteTimeout>
-    <NumberOfBytes>5</NumberOfBytes>
+    <NumberOfBytes>20</NumberOfBytes>
 
 </Environment>
