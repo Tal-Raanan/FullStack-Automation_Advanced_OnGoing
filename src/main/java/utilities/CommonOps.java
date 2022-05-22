@@ -7,6 +7,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.windows.WindowsDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.restassured.RestAssured;
+import org.omg.CORBA.PUBLIC_MEMBER;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -167,6 +168,10 @@ public class CommonOps extends Base {
         ManagePages.initQuartet();
     }
 
+    public static void initDB() {
+        ManageDB.openConnection(getData("DBURL"), getData("DBUsername"), getData("DBPassword"));
+    }
+
     // Method Name: initClientServer
     // Method Description: This method init Client-Server communication
     // Method Parameters: None
@@ -215,12 +220,14 @@ public class CommonOps extends Base {
             initClientServer();
         else if (platform.equalsIgnoreCase("serial"))
             initSerial();
+        else if (platform.equalsIgnoreCase("db"))
+            initDB();
         else
             throw new RuntimeException("Invalid platform type");
 
         softAssert = new SoftAssert();
         screen = new Screen();
-        ManageDB.openConnection(getData("DBURL"), getData("DBUsername"), getData("DBPassword"));
+//        ManageDB.openConnection(getData("DBURL"), getData("DBUsername"), getData("DBPassword"));
 
     }
 
@@ -230,7 +237,6 @@ public class CommonOps extends Base {
     // Method Return: None
     @AfterClass
     public void closeSession() {
-        ManageDB.closeConnection();
         if (!platform.equalsIgnoreCase("api")) {
             if (platform.equalsIgnoreCase("mobile")){
                 mobileDriver.quit();
@@ -238,8 +244,11 @@ public class CommonOps extends Base {
             else if (platform.equalsIgnoreCase("clientServer")){
                 ClientServerActions.closeSocket();
             }
-            else if (platform.equalsIgnoreCase("serial")) {            //Relevant TestNG suit should be added
+            else if (platform.equalsIgnoreCase("serial")) {
                 SerialConnectionActions.closeSerialPort(getData("COMPort"));
+            }
+            else if (platform.equalsIgnoreCase("db")) {
+                ManageDB.closeConnection();
             }
             else {
                 driver.quit();}
@@ -265,7 +274,7 @@ public class CommonOps extends Base {
     // Method Return: None
     @BeforeMethod
     public void beforeMethod(Method method) {
-        if (!platform.equalsIgnoreCase("api") && !platform.equalsIgnoreCase("clientServer") && !platform.equalsIgnoreCase("serial")) {
+        if (!platform.equalsIgnoreCase("api") && !platform.equalsIgnoreCase("clientServer") && !platform.equalsIgnoreCase("serial") && !platform.equalsIgnoreCase("db")) {
                 try {
                     MonteScreenRecorder.startRecord(method.getName());
                 } catch (Exception e) {
@@ -274,6 +283,3 @@ public class CommonOps extends Base {
             }
         }
     }
-
-
-

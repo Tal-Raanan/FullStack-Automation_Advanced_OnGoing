@@ -37,11 +37,11 @@ public class SerialConnectionActions extends CommonOps {
         }
 
         @Step("Send Data Bytes")
-        public static void sendDataBytes(int x) throws Exception{
+        public static void sendDataBytes(int x) throws Exception {
             for (Integer i = 0; i < x; ++i) {
                 serialPort.getOutputStream().write(i.byteValue());
                 serialPort.getOutputStream().flush();
-                System.out.println("Sent Message: " + x);
+                System.out.println("Sent Number: " + i);
                 Thread.sleep(1000);
             }
         }
@@ -66,7 +66,7 @@ public class SerialConnectionActions extends CommonOps {
         public static void closeSerialPort (String COMPort){
             if (serialPort.closePort()) { // //Should return "True")
                 System.out.println("Port " +COMPort + " " + "is Now Close");
-                logger.info("Port " +COMPort + " " + "is Now Close");
+                logger.info("Port " +COMPort + " " + "is Now Closed");
             } else {
                 System.out.println("Failed to Close Communication Port "+COMPort);
                 logger.info("Failed to Close Communication Port "+COMPort);
