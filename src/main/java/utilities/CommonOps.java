@@ -165,7 +165,7 @@ public class CommonOps extends Base {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Long.parseLong(getData("Timeout")), TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, Long.parseLong(getData("Timeout")));
-        ManagePages.initQuartet();
+        ManagePages.initAradSmart();
     }
 
     public static void initDB() {
@@ -250,8 +250,8 @@ public class CommonOps extends Base {
             else if (platform.equalsIgnoreCase("db")) {
                 ManageDB.closeConnection();
             }
-            else {
-                driver.quit();}
+//            else {
+//                driver.quit();}
         }
     }
 

@@ -19,6 +19,12 @@ public class UIActions extends CommonOps {
         elem.click();
     }
 
+    @Step("Double-Click On Element")
+    public static void doubleClick(WebElement elem){
+//        wait.until(ExpectedConditions.elementToBeClickable(elem));
+        action.doubleClick(elem).perform();
+    }
+
     @Step("Update Text Element")
     public static void updateText(WebElement elem, String text){
         wait.until(ExpectedConditions.visibilityOf(elem));
@@ -66,9 +72,15 @@ public class UIActions extends CommonOps {
         actions.moveByOffset(x_offset, y_offset).click().build().perform();
     }
 
-
     @Step("Refresh Page")
     public static void refreshPage (){
         driver.navigate().refresh();
+    }
+
+    @Step("move to Element")
+    public static void moveToElement(WebElement elem) {
+        Actions actions = new Actions(driver);
+        actions.moveToElement(elem);
+        actions.perform();
     }
 }

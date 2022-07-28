@@ -29,9 +29,28 @@
     <ElectronAppPath>C:/Users/talra/AppData/Local/Programs/todolist/Todolist.exe</ElectronAppPath>
 
     <!-- Desktop -->
-<!--    <CalculatorApp>Microsoft.WindowsCalculator_8wekyb3d8bbwe!App</CalculatorApp>-->
-    <ApplicationPath>C:\Program Files\WindowsApps\QuaRTEt_5.0.0.0_x86__jabasdn046bka/QuaRTEt/QuaRTEt.exe</ApplicationPath>
+    <ApplicationPath>C:\Arad\Arad Smart Meters\Octave.UI.exe</ApplicationPath>
     <AppiumServerDesktop>http://127.0.0.1:4723</AppiumServerDesktop>
+
+    <AradPassword>4444</AradPassword>
+    <UnreachedThresholdValue>2.500</UnreachedThresholdValue>
+    <ReachedThresholdValue>1.500</ReachedThresholdValue>
+    <StartDurationMin>10</StartDurationMin>
+    <StartDurationHrs>1010</StartDurationHrs>
+    <EndDurationMin>10</EndDurationMin>
+    <StartAlarm>0.100</StartAlarm>
+    <StartDuration>10</StartDuration>
+    <AFT>10</AFT>
+    <ActQuantity>1</ActQuantity>
+    <!-- Totalizer -->
+    <FlowRate>2.00000</FlowRate>
+    <PosVolume>2.00000</PosVolume>
+    <NegVolume>0.00000</NegVolume>
+    <RunningTime>1</RunningTime>
+    <ReverseFlow>-1</ReverseFlow>
+    <!-- Main logs -->
+<!--    <LogPath>C:\Arad\Logs\LoRa\</LogPath>-->
+
 
     <!-- Database -->
     <DBURL>jdbc:mysql://remotemysql.com:3306/WbxUTF7qNP</DBURL>

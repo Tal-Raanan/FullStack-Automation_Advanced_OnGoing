@@ -31,7 +31,8 @@ public class Listeners extends CommonOps implements ITestListener {
         System.out.println("------------------- Skipped Test: " + test.getName() + "-------------------");
     }
 
-    public void onTestStart(ITestContext test) {
+//    public void onTestStart(ITestContext test) {
+     public void onTestStart(ITestResult test) {
         logger.info("------------------- Starting Test: " + test.getName() + "-------------------");
         System.out.println("------------------- Starting Test: " + test.getName() + "-------------------");
     }
@@ -56,9 +57,10 @@ public class Listeners extends CommonOps implements ITestListener {
                 logger.info("File Deleted Successfully");
                 System.out.println("File Deleted Successfully");
             }
-            else
+            else {
                 logger.info("Failed To Delete File");
                 System.out.println("Failed To Delete File");
+                }
         }
     }
 

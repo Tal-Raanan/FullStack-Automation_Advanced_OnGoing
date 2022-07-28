@@ -67,7 +67,10 @@ public class Base {
     protected static pageObjects.todo.MainPage todoMain;
 
     //Page Objects - Desktop
-    protected static pageObjects.quartet.MainPage quartetMain;
+    protected static pageObjects.aradSmart.AradLoginPage aradLoginPage;
+    protected static pageObjects.aradSmart.AradMainPage aradMainPage;
+    protected static pageObjects.aradSmart.AradAdvancedPage aradAdvancedPage;
+    protected static pageObjects.aradSmart.AradAlarmPage aradAlarmPage;
 
     //Logger
     protected static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(utilities.Base.class.getName());

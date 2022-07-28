@@ -39,7 +39,6 @@ public class Verifications extends CommonOps {
         } catch (FindFailed findFailed) {
             System.out.println("Error Comparing Image File: " + findFailed);
             fail("Error Comparing Image File: " + findFailed);
-
         }
     }
 

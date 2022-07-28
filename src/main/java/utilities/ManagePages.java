@@ -28,7 +28,10 @@ public class ManagePages extends Base {
         todoMain = PageFactory.initElements(driver, pageObjects.todo.MainPage.class);
     }
 
-    public static void initQuartet() {
-        quartetMain = PageFactory.initElements(driver, pageObjects.quartet.MainPage.class);
+    public static void initAradSmart() {
+        aradLoginPage = PageFactory.initElements(driver, pageObjects.aradSmart.AradLoginPage.class);
+        aradMainPage = PageFactory.initElements(driver, pageObjects.aradSmart.AradMainPage.class);
+        aradAdvancedPage = PageFactory.initElements(driver, pageObjects.aradSmart.AradAdvancedPage.class);
+        aradAlarmPage = PageFactory.initElements(driver, pageObjects.aradSmart.AradAlarmPage.class);
     }
 }
