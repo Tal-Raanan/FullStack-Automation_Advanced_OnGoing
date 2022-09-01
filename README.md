@@ -41,7 +41,8 @@ The project is an example of infrastructure for automation testing of different 
 * Mortgage calculator - Mobile application
 * Grafana API - Web API
 * Electron application (Todolist)
-* Quartet - Private Desktop application
+* ASM - Private Desktop application
+* Arduino Idea
 
 ### _Tools & Frameworks used in the project:_
 * TestNG - Testing framework
