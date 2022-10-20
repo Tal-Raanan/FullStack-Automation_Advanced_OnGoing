@@ -1,20 +1,90 @@
 [ {
-  "uid" : "6687d9414aefeab5",
-  "name" : "Test02 - Verify Default users",
+  "uid" : "fd2938fbb31b58de",
+  "name" : "Test06 - Verify Avatar Icon",
   "time" : {
-    "start" : 1647521380809,
-    "stop" : 1647521396643,
-    "duration" : 15834
+    "start" : 1666252822485,
+    "stop" : 1666252824889,
+    "duration" : 2404
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "5e37a2e4ed322c7b",
+  "name" : "Test04 - Verify User Deletion",
+  "time" : {
+    "start" : 1666252801411,
+    "stop" : 1666252811732,
+    "duration" : 10321
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "8b44ff93df3d6885",
+  "uid" : "9fce627937fe1cfa",
+  "name" : "Test03 - Verify New User",
+  "time" : {
+    "start" : 1666252790724,
+    "stop" : 1666252801061,
+    "duration" : 10337
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "f105e12cacb2f025",
   "name" : "Test01 - Verify Header",
   "time" : {
-    "start" : 1647521363776,
-    "stop" : 1647521379912,
-    "duration" : 16136
+    "start" : 1666252777919,
+    "stop" : 1666252779728,
+    "duration" : 1809
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f988118354522ca",
+  "name" : "Test07 - Search Users",
+  "time" : {
+    "start" : 1666252846602,
+    "stop" : 1666252856986,
+    "duration" : 10384
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "abd150622a718769",
+  "name" : "Test07 - Search Users",
+  "time" : {
+    "start" : 1666252825224,
+    "stop" : 1666252835553,
+    "duration" : 10329
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "dbc8ed66bb52d17c",
+  "name" : "Test07 - Search Users",
+  "time" : {
+    "start" : 1666252835949,
+    "stop" : 1666252846273,
+    "duration" : 10324
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4bdcbf758744cbe7",
+  "name" : "Test05 - Verify Progress Steps",
+  "time" : {
+    "start" : 1666252812016,
+    "stop" : 1666252822214,
+    "duration" : 10198
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "20dd537a200b3fa9",
+  "name" : "Test02 - Verify Default users",
+  "time" : {
+    "start" : 1666252780060,
+    "stop" : 1666252790429,
+    "duration" : 10369
   },
   "status" : "broken",
   "severity" : "normal"

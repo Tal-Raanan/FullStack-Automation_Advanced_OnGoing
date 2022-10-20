@@ -1,16 +1,17 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
   "children" : [ {
     "name" : "sanity.GrafanaWeb",
     "children" : [ {
       "name" : "test01_verifyHeader",
-      "uid" : "8b44ff93df3d6885",
+      "uid" : "f105e12cacb2f025",
       "parentUid" : "fb60a0c3b0e42f98830176b668c5c08c",
-      "status" : "broken",
+      "status" : "passed",
       "time" : {
-        "start" : 1647521363776,
-        "stop" : 1647521379912,
-        "duration" : 16136
+        "start" : 1666252777919,
+        "stop" : 1666252779728,
+        "duration" : 1809
       },
       "flaky" : false,
       "newFailed" : false,
@@ -21,13 +22,13 @@
       "parameters" : [ "web" ]
     }, {
       "name" : "test02_verifyDefaultUsers",
-      "uid" : "6687d9414aefeab5",
+      "uid" : "20dd537a200b3fa9",
       "parentUid" : "fb60a0c3b0e42f98830176b668c5c08c",
       "status" : "broken",
       "time" : {
-        "start" : 1647521380809,
-        "stop" : 1647521396643,
-        "duration" : 15834
+        "start" : 1666252780060,
+        "stop" : 1666252790429,
+        "duration" : 10369
       },
       "flaky" : false,
       "newFailed" : false,
@@ -36,8 +37,126 @@
       "retriesCount" : 0,
       "retriesStatusChange" : false,
       "parameters" : [ "web" ]
+    }, {
+      "name" : "test03_createNewUser",
+      "uid" : "9fce627937fe1cfa",
+      "parentUid" : "fb60a0c3b0e42f98830176b668c5c08c",
+      "status" : "broken",
+      "time" : {
+        "start" : 1666252790724,
+        "stop" : 1666252801061,
+        "duration" : 10337
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "web" ]
+    }, {
+      "name" : "test04_verifyUserDeletion",
+      "uid" : "5e37a2e4ed322c7b",
+      "parentUid" : "fb60a0c3b0e42f98830176b668c5c08c",
+      "status" : "broken",
+      "time" : {
+        "start" : 1666252801411,
+        "stop" : 1666252811732,
+        "duration" : 10321
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "web" ]
+    }, {
+      "name" : "test05_verifyProgressSteps",
+      "uid" : "4bdcbf758744cbe7",
+      "parentUid" : "fb60a0c3b0e42f98830176b668c5c08c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666252812016,
+        "stop" : 1666252822214,
+        "duration" : 10198
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "web" ]
+    }, {
+      "name" : "test06_verifyAvatarIcon",
+      "uid" : "fd2938fbb31b58de",
+      "parentUid" : "fb60a0c3b0e42f98830176b668c5c08c",
+      "status" : "failed",
+      "time" : {
+        "start" : 1666252822485,
+        "stop" : 1666252824889,
+        "duration" : 2404
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "web" ]
+    }, {
+      "name" : "test07_searchUsers",
+      "uid" : "abd150622a718769",
+      "parentUid" : "fb60a0c3b0e42f98830176b668c5c08c",
+      "status" : "broken",
+      "time" : {
+        "start" : 1666252825224,
+        "stop" : 1666252835553,
+        "duration" : 10329
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "web", "admin", "exist" ]
+    }, {
+      "name" : "test07_searchUsers",
+      "uid" : "dbc8ed66bb52d17c",
+      "parentUid" : "fb60a0c3b0e42f98830176b668c5c08c",
+      "status" : "broken",
+      "time" : {
+        "start" : 1666252835949,
+        "stop" : 1666252846273,
+        "duration" : 10324
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "web", "John", "not-exist" ]
+    }, {
+      "name" : "test07_searchUsers",
+      "uid" : "f988118354522ca",
+      "parentUid" : "fb60a0c3b0e42f98830176b668c5c08c",
+      "status" : "broken",
+      "time" : {
+        "start" : 1666252846602,
+        "stop" : 1666252856986,
+        "duration" : 10384
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "web", "Tal", "not-exist" ]
     } ],
     "uid" : "sanity.GrafanaWeb"
-  } ],
-  "name" : "packages"
+  } ]
 }

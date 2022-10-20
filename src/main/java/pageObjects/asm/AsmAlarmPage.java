@@ -1,10 +1,10 @@
-package pageObjects.aradSmart;
+package pageObjects.asm;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class AradAlarmPage {
+public class AsmAlarmPage {
 
     @FindBy(how = How.NAME, using = "Alarm Thresholds")
     public WebElement btn_alarmThresholds;

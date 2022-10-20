@@ -1,5 +1,6 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
   "children" : [ {
     "name" : "Web Suite",
     "children" : [ {
@@ -8,13 +9,13 @@
         "name" : "sanity.GrafanaWeb",
         "children" : [ {
           "name" : "Test01 - Verify Header",
-          "uid" : "8b44ff93df3d6885",
+          "uid" : "f105e12cacb2f025",
           "parentUid" : "c5b0eafa658485fa3314b91a9998509c",
-          "status" : "broken",
+          "status" : "passed",
           "time" : {
-            "start" : 1647521363776,
-            "stop" : 1647521379912,
-            "duration" : 16136
+            "start" : 1666252777919,
+            "stop" : 1666252779728,
+            "duration" : 1809
           },
           "flaky" : false,
           "newFailed" : false,
@@ -25,13 +26,13 @@
           "parameters" : [ "web" ]
         }, {
           "name" : "Test02 - Verify Default users",
-          "uid" : "6687d9414aefeab5",
+          "uid" : "20dd537a200b3fa9",
           "parentUid" : "c5b0eafa658485fa3314b91a9998509c",
           "status" : "broken",
           "time" : {
-            "start" : 1647521380809,
-            "stop" : 1647521396643,
-            "duration" : 15834
+            "start" : 1666252780060,
+            "stop" : 1666252790429,
+            "duration" : 10369
           },
           "flaky" : false,
           "newFailed" : false,
@@ -40,12 +41,130 @@
           "retriesCount" : 0,
           "retriesStatusChange" : false,
           "parameters" : [ "web" ]
+        }, {
+          "name" : "Test03 - Verify New User",
+          "uid" : "9fce627937fe1cfa",
+          "parentUid" : "c5b0eafa658485fa3314b91a9998509c",
+          "status" : "broken",
+          "time" : {
+            "start" : 1666252790724,
+            "stop" : 1666252801061,
+            "duration" : 10337
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "web" ]
+        }, {
+          "name" : "Test04 - Verify User Deletion",
+          "uid" : "5e37a2e4ed322c7b",
+          "parentUid" : "c5b0eafa658485fa3314b91a9998509c",
+          "status" : "broken",
+          "time" : {
+            "start" : 1666252801411,
+            "stop" : 1666252811732,
+            "duration" : 10321
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "web" ]
+        }, {
+          "name" : "Test05 - Verify Progress Steps",
+          "uid" : "4bdcbf758744cbe7",
+          "parentUid" : "c5b0eafa658485fa3314b91a9998509c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1666252812016,
+            "stop" : 1666252822214,
+            "duration" : 10198
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "web" ]
+        }, {
+          "name" : "Test06 - Verify Avatar Icon",
+          "uid" : "fd2938fbb31b58de",
+          "parentUid" : "c5b0eafa658485fa3314b91a9998509c",
+          "status" : "failed",
+          "time" : {
+            "start" : 1666252822485,
+            "stop" : 1666252824889,
+            "duration" : 2404
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "web" ]
+        }, {
+          "name" : "Test07 - Search Users",
+          "uid" : "abd150622a718769",
+          "parentUid" : "c5b0eafa658485fa3314b91a9998509c",
+          "status" : "broken",
+          "time" : {
+            "start" : 1666252825224,
+            "stop" : 1666252835553,
+            "duration" : 10329
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "web", "admin", "exist" ]
+        }, {
+          "name" : "Test07 - Search Users",
+          "uid" : "dbc8ed66bb52d17c",
+          "parentUid" : "c5b0eafa658485fa3314b91a9998509c",
+          "status" : "broken",
+          "time" : {
+            "start" : 1666252835949,
+            "stop" : 1666252846273,
+            "duration" : 10324
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "web", "John", "not-exist" ]
+        }, {
+          "name" : "Test07 - Search Users",
+          "uid" : "f988118354522ca",
+          "parentUid" : "c5b0eafa658485fa3314b91a9998509c",
+          "status" : "broken",
+          "time" : {
+            "start" : 1666252846602,
+            "stop" : 1666252856986,
+            "duration" : 10384
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "web", "Tal", "not-exist" ]
         } ],
         "uid" : "c5b0eafa658485fa3314b91a9998509c"
       } ],
       "uid" : "fbd747309552d470d458686a49ca6eb7"
     } ],
     "uid" : "3ee6c328cd13b7bf8cf2e1560d3cdfae"
-  } ],
-  "name" : "suites"
+  } ]
 }

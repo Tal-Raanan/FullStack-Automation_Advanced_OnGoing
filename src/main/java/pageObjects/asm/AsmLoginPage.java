@@ -1,4 +1,4 @@
-package pageObjects.aradSmart;
+package pageObjects.asm;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -6,7 +6,7 @@ import org.openqa.selenium.support.How;
 
 //Class Name: MainPage
 //Description: This class captures objects which are located at the main page
-public class AradLoginPage {
+public class AsmLoginPage {
 
     //Main Elements
     @FindBy(how = How.CLASS_NAME, using = "PasswordBox")

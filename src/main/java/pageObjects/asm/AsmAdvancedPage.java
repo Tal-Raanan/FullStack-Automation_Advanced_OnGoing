@@ -1,10 +1,10 @@
-package pageObjects.aradSmart;
+package pageObjects.asm;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class AradAdvancedPage {
+public class AsmAdvancedPage {
 
     @FindBy(how = How.NAME, using = "Advanced")
     public WebElement btn_advanced;

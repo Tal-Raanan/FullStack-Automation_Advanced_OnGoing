@@ -4,7 +4,7 @@
     <test name="Desktop Tests">
         <parameter name="PlatformName" value="desktop" />
         <classes>
-            <class name="sanity.AradSmartDesktop" />
+            <class name="sanity.AsmDesktop" />
         </classes>
     </test>
 </suite>

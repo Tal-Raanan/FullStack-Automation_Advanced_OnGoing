@@ -1,24 +1,20 @@
 package sanity;
 
-import com.google.common.util.concurrent.Uninterruptibles;
 import extensions.Verifications;
 import io.qameta.allure.Description;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import sun.security.krb5.internal.crypto.Des;
 import utilities.CommonOps;
 import workflows.DesktopFlows;
 
-import java.util.concurrent.TimeUnit;
-
 @Listeners(utilities.Listeners.class)
-public class AradSmartDesktop extends CommonOps {
+public class AsmDesktop extends CommonOps {
 
     @Test(description = "Test01 - Verify Login")
     @Description("This test verifies successful login to Arad Smart")
     public void test01_verifyLogin() {
         DesktopFlows.ASMlogin(getData("AradPassword"));
-        Verifications.elementIsVisible(aradMainPage.btn_disconnect);
+        Verifications.elementIsVisible(asmMainPage.btn_disconnect);
     }
 
 //    @Test(description = "Test02 - Clear Logs")

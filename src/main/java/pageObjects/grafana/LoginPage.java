@@ -13,10 +13,10 @@ public class LoginPage {
     @FindBy(how = How.NAME, using = "password")
     public WebElement txt_password;
 
-    @FindBy(how = How.CSS, using = "button[class='css-w9m50q-button']")
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/main/div[3]/div/div[2]/div/div/form/button/span")
     public WebElement btn_login;
 
-    @FindBy(how = How.CSS, using = "button[class='css-g4ra35-button']")
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/main/div[3]/div/div[2]/div/form/div[3]/div[2]/button/span")
     public WebElement btn_skip;
 
 }

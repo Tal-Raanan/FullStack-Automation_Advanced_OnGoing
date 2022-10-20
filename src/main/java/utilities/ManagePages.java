@@ -1,6 +1,10 @@
 package utilities;
 
 import org.openqa.selenium.support.PageFactory;
+import pageObjects.asm.AsmAdvancedPage;
+import pageObjects.asm.AsmAlarmPage;
+import pageObjects.asm.AsmLoginPage;
+import pageObjects.asm.AsmMainPage;
 import pageObjects.grafana.AddNewUserPage;
 import pageObjects.grafana.ServerAdminMainPage;
 import pageObjects.grafana.ServerAdminMenuPage;
@@ -28,10 +32,10 @@ public class ManagePages extends Base {
         todoMain = PageFactory.initElements(driver, pageObjects.todo.MainPage.class);
     }
 
-    public static void initAradSmart() {
-        aradLoginPage = PageFactory.initElements(driver, pageObjects.aradSmart.AradLoginPage.class);
-        aradMainPage = PageFactory.initElements(driver, pageObjects.aradSmart.AradMainPage.class);
-        aradAdvancedPage = PageFactory.initElements(driver, pageObjects.aradSmart.AradAdvancedPage.class);
-        aradAlarmPage = PageFactory.initElements(driver, pageObjects.aradSmart.AradAlarmPage.class);
+    public static void initAsm() {
+        asmLoginPage = PageFactory.initElements(driver, AsmLoginPage.class);
+        asmMainPage = PageFactory.initElements(driver, AsmMainPage.class);
+        asmAdvancedPage = PageFactory.initElements(driver, AsmAdvancedPage.class);
+        asmAlarmPage = PageFactory.initElements(driver, AsmAlarmPage.class);
     }
 }

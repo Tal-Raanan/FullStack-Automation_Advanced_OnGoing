@@ -5,7 +5,6 @@ import io.appium.java_client.AppiumDriver;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.apache.log4j.Logger;
 import org.json.simple.JSONObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -13,6 +12,10 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.Screen;
 import org.testng.asserts.SoftAssert;
+import pageObjects.asm.AsmAdvancedPage;
+import pageObjects.asm.AsmAlarmPage;
+import pageObjects.asm.AsmLoginPage;
+import pageObjects.asm.AsmMainPage;
 
 import java.net.Socket;
 import java.sql.Connection;
@@ -67,10 +70,10 @@ public class Base {
     protected static pageObjects.todo.MainPage todoMain;
 
     //Page Objects - Desktop
-    protected static pageObjects.aradSmart.AradLoginPage aradLoginPage;
-    protected static pageObjects.aradSmart.AradMainPage aradMainPage;
-    protected static pageObjects.aradSmart.AradAdvancedPage aradAdvancedPage;
-    protected static pageObjects.aradSmart.AradAlarmPage aradAlarmPage;
+    protected static AsmLoginPage asmLoginPage;
+    protected static AsmMainPage asmMainPage;
+    protected static AsmAdvancedPage asmAdvancedPage;
+    protected static AsmAlarmPage asmAlarmPage;
 
     //Logger
     protected static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(utilities.Base.class.getName());

@@ -2,9 +2,9 @@
   "name" : "Jenkins",
   "type" : "jenkins",
   "url" : "http://localhost:9090/",
-  "buildOrder" : 7,
-  "buildName" : "Sanity Tests - Web #7",
-  "buildUrl" : "http://localhost:9090/job/Web/7/",
+  "buildOrder" : 13,
+  "buildName" : "Sanity Tests - Web #13",
+  "buildUrl" : "http://localhost:9090/job/Web/13/",
   "reportName" : "AllureReport",
-  "reportUrl" : "http://localhost:9090/job/Web/7/allure"
+  "reportUrl" : "http://localhost:9090/job/Web/13/allure"
 } ]

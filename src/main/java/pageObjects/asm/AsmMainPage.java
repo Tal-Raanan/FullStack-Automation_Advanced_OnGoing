@@ -1,10 +1,10 @@
-package pageObjects.aradSmart;
+package pageObjects.asm;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class AradMainPage {
+public class AsmMainPage {
     @FindBy(how = How.NAME, using = "Meter Logs")
     public WebElement btn_meterLogs;
 

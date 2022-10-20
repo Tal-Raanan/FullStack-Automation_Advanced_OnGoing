@@ -165,7 +165,7 @@ public class CommonOps extends Base {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Long.parseLong(getData("Timeout")), TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, Long.parseLong(getData("Timeout")));
-        ManagePages.initAradSmart();
+        ManagePages.initAsm();
     }
 
     public static void initDB() {

@@ -29,7 +29,7 @@
     <ElectronAppPath>C:/Users/talra/AppData/Local/Programs/todolist/Todolist.exe</ElectronAppPath>
 
     <!-- Desktop -->
-    <ApplicationPath>C:\Arad\Arad Smart Meters\Octave.UI.exe</ApplicationPath>
+<!--    <ApplicationPath>pass should be inserted</ApplicationPath>-->
     <AppiumServerDesktop>http://127.0.0.1:4723</AppiumServerDesktop>
 
     <AradPassword>4444</AradPassword>
