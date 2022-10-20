@@ -41,7 +41,8 @@ The project is an example of infrastructure for automation testing of different 
 * Mortgage calculator - Mobile application
 * Grafana API - Web API
 * Electron application (Todolist)
-* Quartet - Private Desktop application
+* ASM - Private Desktop application
+* Arduino Idea
 
 ### _Tools & Frameworks used in the project:_
 * TestNG - Testing framework
@@ -53,7 +54,7 @@ The project is an example of infrastructure for automation testing of different 
 * REST Assured - For API testing
 * [Allure Reports](http://allure.qatools.ru/) - As the main reporting system:
 
-![This is an image](/allure-results/Report-Failure.png)
+![This is an image](https://github.com/Tal-Raanan/FullStack-Automation_Project/blob/master/allure-results/Report-Failure.png)
 
 
 ### Tests Execution:
