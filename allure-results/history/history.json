@@ -1,0 +1,911 @@
+{
+  "a441f0098bf1e0f38f7db6fd5eec806e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 2,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "a9b415501720e65c",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/a9b415501720e65c",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666086036646,
+        "stop" : 1666086036647,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7c8cba20ef374f0a",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/7c8cba20ef374f0a",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666086036646,
+        "stop" : 1666086036647,
+        "duration" : 1
+      }
+    } ]
+  },
+  "d9f5bdf9c50a15c110bd83b54a1fd1c6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 2,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "3ddfc11b47e26d39",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/3ddfc11b47e26d39",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666085825383,
+        "stop" : 1666085825384,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "700f950f1a4ffdf2",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/700f950f1a4ffdf2",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666085825383,
+        "stop" : 1666085825384,
+        "duration" : 1
+      }
+    } ]
+  },
+  "92fd7b362964aed6161280777d45efcb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 2,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "5c7f91cabcc06c4a",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/5c7f91cabcc06c4a",
+      "status" : "skipped",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1666085872912,
+        "stop" : 1666085872913,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9fab58367fa82a00",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/9fab58367fa82a00",
+      "status" : "skipped",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1666085872912,
+        "stop" : 1666085872913,
+        "duration" : 1
+      }
+    } ]
+  },
+  "8ad6adb064fc24d832e098deec7a5abf" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 2,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "ce1d22112cf05f33",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/ce1d22112cf05f33",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666086036585,
+        "stop" : 1666086036585,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "88d4254ec0cbc996",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/88d4254ec0cbc996",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666086036585,
+        "stop" : 1666086036585,
+        "duration" : 0
+      }
+    } ]
+  },
+  "dbc4a382a32ac4f711ec542acd816937" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fe79ef0ad3dc3149",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/fe79ef0ad3dc3149",
+      "status" : "broken",
+      "statusDetails" : "java.lang.reflect.InvocationTargetException\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'TALR', ip: '192.168.224.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'\nDriver info: driver.version: RemoteWebDriver",
+      "time" : {
+        "start" : 1666105068308,
+        "stop" : 1666105078736,
+        "duration" : 10428
+      }
+    } ]
+  },
+  "8b6e60cf4e9ecaf9d054b833847d9cb9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 2,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "66f53d5207716069",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/66f53d5207716069",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666085825421,
+        "stop" : 1666085825421,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "8bb462a3c5088f2b",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/8bb462a3c5088f2b",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666085825421,
+        "stop" : 1666085825421,
+        "duration" : 0
+      }
+    } ]
+  },
+  "5a4600fddcb98341be8c11c16f7821d7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 2,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "bcf3768f198bf962",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/bcf3768f198bf962",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666086036605,
+        "stop" : 1666086036606,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c21688ca22af1efb",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/c21688ca22af1efb",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666086036605,
+        "stop" : 1666086036606,
+        "duration" : 1
+      }
+    } ]
+  },
+  "14bc8d4d2989fbfe22c7b731b2b3b55d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 2,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "b911228c91517446",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/b911228c91517446",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666086036756,
+        "stop" : 1666086036757,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e0005a3938eea038",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/e0005a3938eea038",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666086036756,
+        "stop" : 1666086036757,
+        "duration" : 1
+      }
+    } ]
+  },
+  "a7e7558d25fcd7811e8d7de7a39cb88" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "815f04ac0006805d",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/815f04ac0006805d",
+      "status" : "broken",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1666085872842,
+        "stop" : 1666085872843,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7b416a5bd471e478",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/7b416a5bd471e478",
+      "status" : "broken",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1666085872842,
+        "stop" : 1666085872843,
+        "duration" : 1
+      }
+    } ]
+  },
+  "2aef6f9eb2ce63ad1903688119b1a15a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 2,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "86bd2f2be49996fe",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/86bd2f2be49996fe",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666086036668,
+        "stop" : 1666086036669,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "292b211f7d24cf25",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/292b211f7d24cf25",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666086036668,
+        "stop" : 1666086036669,
+        "duration" : 1
+      }
+    } ]
+  },
+  "37b31872c3a1e3f710e8430ffc4cecd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "b690fbb0c6923da8",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/b690fbb0c6923da8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666105055927,
+        "stop" : 1666105066135,
+        "duration" : 10208
+      }
+    }, {
+      "uid" : "4944e30908d19abf",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/4944e30908d19abf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666104119103,
+        "stop" : 1666104129300,
+        "duration" : 10197
+      }
+    } ]
+  },
+  "a10d4ceeaabf64f2f5afc25402b22bf9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 2,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "5957bbf794fe67ac",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/5957bbf794fe67ac",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666085825405,
+        "stop" : 1666085825405,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "93138ca33a2d3014",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/93138ca33a2d3014",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666085825405,
+        "stop" : 1666085825405,
+        "duration" : 0
+      }
+    } ]
+  },
+  "fa40e3b69d71af2e0bcfcd44afa6322b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "51e806118b3da0b",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/51e806118b3da0b",
+      "status" : "broken",
+      "statusDetails" : "java.lang.reflect.InvocationTargetException\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'TALR', ip: '192.168.224.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'\nDriver info: driver.version: RemoteWebDriver",
+      "time" : {
+        "start" : 1666105034542,
+        "stop" : 1666105044898,
+        "duration" : 10356
+      }
+    }, {
+      "uid" : "3be84473d4bc7959",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/3be84473d4bc7959",
+      "status" : "broken",
+      "statusDetails" : "java.lang.reflect.InvocationTargetException\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'TALR', ip: '192.168.224.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'\nDriver info: driver.version: RemoteWebDriver",
+      "time" : {
+        "start" : 1666104087448,
+        "stop" : 1666104102918,
+        "duration" : 15470
+      }
+    } ]
+  },
+  "b30a6795dbc95483b838d8ce0f86e758" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 2,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "b48f429054c57396",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/b48f429054c57396",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666086036561,
+        "stop" : 1666086036563,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "e4f1e9b79fe9bfc5",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/e4f1e9b79fe9bfc5",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666086036561,
+        "stop" : 1666086036563,
+        "duration" : 2
+      }
+    } ]
+  },
+  "2b464ee596f2da33d1ed39d3e1df2e54" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 2,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "fc4fad1eb547fd3a",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/fc4fad1eb547fd3a",
+      "status" : "skipped",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1666085872934,
+        "stop" : 1666085872934,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "58d2b8d1bfd8c74f",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/58d2b8d1bfd8c74f",
+      "status" : "skipped",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1666085872934,
+        "stop" : 1666085872934,
+        "duration" : 0
+      }
+    } ]
+  },
+  "f27c5b62cb4d50b38c6b86dffb515726" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "8d292180187fbb56",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/8d292180187fbb56",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666103744819,
+        "stop" : 1666103744970,
+        "duration" : 151
+      }
+    }, {
+      "uid" : "8a38118316b43247",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/8a38118316b43247",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666103744819,
+        "stop" : 1666103744970,
+        "duration" : 151
+      }
+    } ]
+  },
+  "63615f284787fc2cf92d613b68a62d2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 2,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "76e778c678d1fd90",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/76e778c678d1fd90",
+      "status" : "skipped",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1666085872950,
+        "stop" : 1666085872951,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ea8669634b1080f0",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/ea8669634b1080f0",
+      "status" : "skipped",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1666085872950,
+        "stop" : 1666085872951,
+        "duration" : 1
+      }
+    } ]
+  },
+  "b032c4b6d18fd18cff694e0b99ab35eb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "14c3670fa62537f7",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/14c3670fa62537f7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666103741508,
+        "stop" : 1666103744576,
+        "duration" : 3068
+      }
+    }, {
+      "uid" : "eae51729a57b80f7",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/eae51729a57b80f7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666103741508,
+        "stop" : 1666103744576,
+        "duration" : 3068
+      }
+    } ]
+  },
+  "94de5c1c613c1ca680b2a6eada76d5e3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "d1df9c7e87c74e6d",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/d1df9c7e87c74e6d",
+      "status" : "broken",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666085825309,
+        "stop" : 1666085825311,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "3e9e52edc9211f35",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/3e9e52edc9211f35",
+      "status" : "broken",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666085825309,
+        "stop" : 1666085825311,
+        "duration" : 2
+      }
+    } ]
+  },
+  "2e6a94cb7c68e7ea3729be20058903f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 2,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "63488971f30154bb",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/63488971f30154bb",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666085825439,
+        "stop" : 1666085825439,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "56ef771af15b279d",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/56ef771af15b279d",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666085825439,
+        "stop" : 1666085825439,
+        "duration" : 0
+      }
+    } ]
+  },
+  "e50b56b6ece40f15712a479dfdd59779" : {
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "34739ac37ec0a2b0",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/34739ac37ec0a2b0",
+      "status" : "failed",
+      "statusDetails" : "Error Comparing Image File: FindFailed: C:\\\\Automation\\\\Project\\\\FullStack-Automation_Advanced_OnGoing\\\\ImageRepository\\\\GrafanaAvatar.png: (48x50) in R[0,0 1920x1080]@S(0)\n  Line 2287, in file Region.java\n",
+      "time" : {
+        "start" : 1666105066511,
+        "stop" : 1666105067874,
+        "duration" : 1363
+      }
+    }, {
+      "uid" : "dcc2f8fa7aa63ae4",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/dcc2f8fa7aa63ae4",
+      "status" : "failed",
+      "statusDetails" : "Error Comparing Image File: FindFailed: C:\\\\Automation\\\\Project\\\\FullStack-Automation_Advanced_OnGoing\\\\ImageRepository\\\\GrafanaAvatar.png: (48x50) in R[0,0 1920x1080]@S(0)\n  Line 2287, in file Region.java\n",
+      "time" : {
+        "start" : 1666104129514,
+        "stop" : 1666104136131,
+        "duration" : 6617
+      }
+    } ]
+  },
+  "a00787013efcd1ddbde697bad1d5839b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "c4c58cce14e36229",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/c4c58cce14e36229",
+      "status" : "broken",
+      "statusDetails" : "java.lang.reflect.InvocationTargetException\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'TALR', ip: '192.168.224.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'\nDriver info: driver.version: RemoteWebDriver",
+      "time" : {
+        "start" : 1666105045181,
+        "stop" : 1666105055519,
+        "duration" : 10338
+      }
+    }, {
+      "uid" : "2794cecb24e50e73",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/2794cecb24e50e73",
+      "status" : "broken",
+      "statusDetails" : "java.lang.reflect.InvocationTargetException\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'TALR', ip: '192.168.224.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'\nDriver info: driver.version: RemoteWebDriver",
+      "time" : {
+        "start" : 1666104103206,
+        "stop" : 1666104118893,
+        "duration" : 15687
+      }
+    } ]
+  },
+  "4fc4395fed819050eafb7427a380b18d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 3,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "d8d6ea4c98dd8cb1",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/d8d6ea4c98dd8cb1",
+      "status" : "broken",
+      "statusDetails" : "java.lang.reflect.InvocationTargetException\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'TALR', ip: '192.168.224.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'\nDriver info: driver.version: RemoteWebDriver",
+      "time" : {
+        "start" : 1666105023748,
+        "stop" : 1666105034203,
+        "duration" : 10455
+      }
+    }, {
+      "uid" : "9388df06bce141e2",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/9388df06bce141e2",
+      "status" : "broken",
+      "statusDetails" : "java.lang.reflect.InvocationTargetException\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'TALR', ip: '192.168.224.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'\nDriver info: driver.version: RemoteWebDriver",
+      "time" : {
+        "start" : 1666104071465,
+        "stop" : 1666104087231,
+        "duration" : 15766
+      }
+    }, {
+      "uid" : "6687d9414aefeab5",
+      "reportUrl" : "http://localhost:9090/job/Web/7/allure/#testresult/6687d9414aefeab5",
+      "status" : "broken",
+      "statusDetails" : "java.lang.reflect.InvocationTargetException\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'TALR', ip: '192.168.224.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'\nDriver info: driver.version: RemoteWebDriver",
+      "time" : {
+        "start" : 1647521380809,
+        "stop" : 1647521396643,
+        "duration" : 15834
+      }
+    } ]
+  },
+  "85df57e09ccf733e29033a77c03ef007" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3aa02acf3ec16f5d",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/3aa02acf3ec16f5d",
+      "status" : "broken",
+      "statusDetails" : "java.lang.reflect.InvocationTargetException\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'TALR', ip: '192.168.224.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'\nDriver info: driver.version: RemoteWebDriver",
+      "time" : {
+        "start" : 1666105089765,
+        "stop" : 1666105100107,
+        "duration" : 10342
+      }
+    } ]
+  },
+  "af9759d256d85b11263ddc765c9063f0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 2,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "47038678c529c48d",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/47038678c529c48d",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666086036625,
+        "stop" : 1666086036625,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "f5777d857a0c5632",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/f5777d857a0c5632",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666086036625,
+        "stop" : 1666086036625,
+        "duration" : 0
+      }
+    } ]
+  },
+  "b4aea31047bfffb35cb539f4688b0cb7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "346665d265811776",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/346665d265811776",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666103744997,
+        "stop" : 1666103745128,
+        "duration" : 131
+      }
+    }, {
+      "uid" : "44cdb1c443c2168c",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/44cdb1c443c2168c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666103744997,
+        "stop" : 1666103745128,
+        "duration" : 131
+      }
+    } ]
+  },
+  "327bfe2a879f42c289c2554d96c3cc67" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "9c0b5b6f7586929f",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/9c0b5b6f7586929f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666103744620,
+        "stop" : 1666103744789,
+        "duration" : 169
+      }
+    }, {
+      "uid" : "3ca04aa751c2e623",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/3ca04aa751c2e623",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666103744620,
+        "stop" : 1666103744789,
+        "duration" : 169
+      }
+    } ]
+  },
+  "f6c9e41a475cd759d68ad172de751948" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "c4b4c468bb228126",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/c4b4c468bb228126",
+      "status" : "broken",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666086036474,
+        "stop" : 1666086036476,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6a15c5c0293f3d7d",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/6a15c5c0293f3d7d",
+      "status" : "broken",
+      "statusDetails" : "\nParameter 'PlatformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\Users\\talr\\AppData\\Local\\JetBrains\\IdeaIC2021.3\\temp-testng-customsuite.xml",
+      "time" : {
+        "start" : 1666086036474,
+        "stop" : 1666086036476,
+        "duration" : 2
+      }
+    } ]
+  },
+  "7ed5111399b402aba940c55e93006cab" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "becaea51691b04fd",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/becaea51691b04fd",
+      "status" : "broken",
+      "statusDetails" : "java.lang.reflect.InvocationTargetException\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'TALR', ip: '192.168.224.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'\nDriver info: driver.version: RemoteWebDriver",
+      "time" : {
+        "start" : 1666105079116,
+        "stop" : 1666105089437,
+        "duration" : 10321
+      }
+    } ]
+  },
+  "f143a1a38733ab45626a9a4c906fbcec" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "faa24f4d1cde9de8",
+      "reportUrl" : "http://localhost:9090/job/Web/10/allure/#testresult/faa24f4d1cde9de8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666105021718,
+        "stop" : 1666105023449,
+        "duration" : 1731
+      }
+    }, {
+      "uid" : "f9c3e38557d4f75",
+      "reportUrl" : "http://localhost:9090/job/Web/9/allure/#testresult/f9c3e38557d4f75",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: button[class='css-w9m50q-button']' (tried for 5 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1666104054632,
+        "stop" : 1666104070982,
+        "duration" : 16350
+      }
+    }, {
+      "uid" : "8b44ff93df3d6885",
+      "reportUrl" : "http://localhost:9090/job/Web/7/allure/#testresult/8b44ff93df3d6885",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: button[class='css-w9m50q-button']' (tried for 5 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1647521363776,
+        "stop" : 1647521379912,
+        "duration" : 16136
+      }
+    } ]
+  }
+}

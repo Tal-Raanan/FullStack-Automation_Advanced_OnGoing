@@ -1,0 +1,15 @@
+2022-10-20 10:59:30 INFO  Base:17 - ------------------- Starting Execution -------------------
+2022-10-20 10:59:37 INFO  Base:36 - ------------------- Starting Test: test01_verifyHeader-------------------
+2022-10-20 10:59:39 INFO  Base:45 - ------------------- Test: test01_verifyHeader Passed -------------------
+2022-10-20 10:59:39 INFO  Base:57 - File Deleted Successfully
+2022-10-20 10:59:40 INFO  Base:36 - ------------------- Starting Test: test02_verifyDefaultUsers-------------------
+2022-10-20 10:59:50 INFO  Base:36 - ------------------- Starting Test: test03_createNewUser-------------------
+2022-10-20 11:00:01 INFO  Base:36 - ------------------- Starting Test: test04_verifyUserDeletion-------------------
+2022-10-20 11:00:12 INFO  Base:36 - ------------------- Starting Test: test05_verifyProgressSteps-------------------
+2022-10-20 11:00:22 INFO  Base:45 - ------------------- Test: test05_verifyProgressSteps Passed -------------------
+2022-10-20 11:00:22 INFO  Base:57 - File Deleted Successfully
+2022-10-20 11:00:22 INFO  Base:36 - ------------------- Starting Test: test06_verifyAvatarIcon-------------------
+2022-10-20 11:00:25 INFO  Base:36 - ------------------- Starting Test: test07_searchUsers-------------------
+2022-10-20 11:00:35 INFO  Base:36 - ------------------- Starting Test: test07_searchUsers-------------------
+2022-10-20 11:00:46 INFO  Base:36 - ------------------- Starting Test: test07_searchUsers-------------------
+2022-10-20 11:00:57 INFO  Base:22 - ------------------- Ending Execution -------------------
